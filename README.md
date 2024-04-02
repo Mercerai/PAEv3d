@@ -1,7 +1,12 @@
 # [PAEv3D](https://arxiv.org/abs/2401.17121)
 Jiaxu Wang, Junhao He, Ziyi Zhang, Renjing Xu
 
-Based on EventNeRF codebase.
+<p align="center">
+<img src="./Pics/overview.png" width="1000"><br>
+Fig  1. The overview of PAEv3D.
+</p>
+
+Based on [EventNeRF](https://github.com/r00tman/EventNeRF?tab=readme-ov-file) codebase.
 
 The learning-based optical flow estimation method has been released, and the optimization-based method is coming soon.
 
