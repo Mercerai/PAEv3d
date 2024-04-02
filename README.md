@@ -1,4 +1,4 @@
-# [PAEv3D](https://arxiv.org/abs/2401.17121)
+# [PAEv3D](https://arxiv.org/abs/2401.17121) Physical Priors Augmented Event-Based 3D Reconstruction
 Jiaxu Wang, Junhao He, Ziyi Zhang, Renjing Xu
 
 <p align="center">
@@ -43,7 +43,7 @@ python <path-to-your-code>/ddp_test_nerf.py --config <path-to-your-code>/configs
 
 # Citation
 
-please cite our work if you use this code.
+please cite our work if you use this dataset.
 
 ```
 @misc{wang2024physical,
@@ -55,7 +55,9 @@ please cite our work if you use this code.
       primaryClass={cs.RO}
 }
 ```
+# Reference
 
-Reference： [EventNeRF](https://github.com/r00tman/EventNeRF?tab=readme-ov-file).
+EventNeRF: [https://github.com/r00tman/EventNeRF?tab=readme-ov-file](https://github.com/r00tman/EventNeRF?tab=readme-ov-file).
+NeRF-OSR: [https://github.com/r00tman/NeRF-OSR](https://github.com/r00tman/NeRF-OSR).
+NeRF++: [https://github.com/Kai-46/nerfplusplus](https://github.com/Kai-46/nerfplusplus)
 
-Based on [NeRF-OSR codebase](https://github.com/r00tman/NeRF-OSR), which is based on [NeRF++ codebase](https://github.com/Kai-46/nerfplusplus)
