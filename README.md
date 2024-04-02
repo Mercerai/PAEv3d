@@ -57,5 +57,3 @@ please cite our work if you use this code.
       primaryClass={cs.RO}
 }
 ```
-
-# License
