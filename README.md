@@ -6,8 +6,6 @@ Jiaxu Wang, Junhao He, Ziyi Zhang, Renjing Xu
 Fig  1. The overview of PAEv3D.
 </p>
 
-Based on [EventNeRF](https://github.com/r00tman/EventNeRF?tab=readme-ov-file) codebase.
-
 The learning-based optical flow estimation method has been released, and the optimization-based method is coming soon.
 
 # Dataset
@@ -55,5 +53,16 @@ please cite our work if you use this code.
       eprint={2401.17121},
       archivePrefix={arXiv},
       primaryClass={cs.RO}
+}
+```
+
+Based on [EventNeRF](https://github.com/r00tman/EventNeRF?tab=readme-ov-file) codebase.
+
+```
+@InProceedings{rudnev2023eventnerf,
+      title={EventNeRF: Neural Radiance Fields from a Single Colour Event Camera},
+      author={Viktor Rudnev and Mohamed Elgharib and Christian Theobalt and Vladislav Golyanik},
+      booktitle={Computer Vision and Pattern Recognition (CVPR)},
+      year={2023}
 }
 ```
