@@ -56,13 +56,6 @@ please cite our work if you use this code.
 }
 ```
 
-Based on [EventNeRF](https://github.com/r00tman/EventNeRF?tab=readme-ov-file) codebase.
+Reference： [EventNeRF](https://github.com/r00tman/EventNeRF?tab=readme-ov-file).
 
-```
-@InProceedings{rudnev2023eventnerf,
-      title={EventNeRF: Neural Radiance Fields from a Single Colour Event Camera},
-      author={Viktor Rudnev and Mohamed Elgharib and Christian Theobalt and Vladislav Golyanik},
-      booktitle={Computer Vision and Pattern Recognition (CVPR)},
-      year={2023}
-}
-```
+Based on [NeRF-OSR codebase](https://github.com/r00tman/NeRF-OSR), which is based on [NeRF++ codebase](https://github.com/Kai-46/nerfplusplus)
