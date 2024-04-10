@@ -35,6 +35,9 @@ conda env create --file environment.yml
 conda activate paev3d
 ```
 
+# Download models
+Download the pretrained models and be expected at ```event-flow/mlruns/```
+
 # Training and Testing
 ```
 python <path-to-your-code>/ddp_train_nerf.py --config <path-to-your-code>/configs/*.txt
