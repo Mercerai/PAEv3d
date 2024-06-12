@@ -6,7 +6,7 @@ Jiaxu Wang, Junhao He, Ziyi Zhang, Renjing Xu
 Fig  1. The overview of PAEv3D.
 </p>
 
-The learning-based optical flow estimation method has been released, and the optimization-based method is coming soon.
+The learning-based optical flow estimation method has been released, which we found is super faster than the optimization-based method to obtain the optical flow in a real-time manner without the need of precomputing. 
 
 # Dataset
 
