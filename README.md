@@ -1,5 +1,5 @@
 # [PAEv3D](https://arxiv.org/abs/2401.17121) Physical Priors Augmented Event-Based 3D Reconstruction
-Jiaxu Wang, Junhao He, Ziyi Zhang, Renjing Xu
+Jiaxu Wang, Junhao He, Ziyi Zhang, Renjing Xu*
 
 <p align="center">
 <img src="./Pics/overview.png" width="1000"><br>
