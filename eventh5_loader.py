@@ -7,7 +7,7 @@ import glob
 import h5py
 import sys
 import torch
-sys.path.append('./EventNeRF_edited_patches/event_flow/')
+sys.path.append('./PAEv3d/event_flow/')
 from load_blender import load_data
 import mlflow
 import configparser
@@ -94,13 +94,13 @@ def load_event_data_split(args, camera_mgr,skip, split, max_winsize=1, win_const
     img_files = find_files('{}'.format(scene_files_path), exts=['*.png'])
     with h5py.File(event_files_path, 'r') as h5_file:
         events = np.array(h5_file['events'])
-        xs, ys, ts, ps = events[:,0], events[:,1], events[:,2], events[:,3]
+        ts, xs, ys, ps = events[:,0], events[:,1], events[:,2], events[:,3]
         xs = xs.astype(np.int32)
         ys = ys.astype(np.int32)
         ps = ps.astype(np.int32)
-        # ps = (ps * 2) - 1
-        # ts -= ts[0]
-        # ts = ts/ts.max()
+        ps = (ps * 2) - 1
+        ts -= ts[0]
+        ts = ts/ts.max()
     
     cam_cnt = len(npz_files)
     T = np.diag([1, -1, -1, 1])
@@ -120,7 +120,7 @@ def load_event_data_split(args, camera_mgr,skip, split, max_winsize=1, win_const
     start_range = 0 if cycle else 1+max_winsize
     model_config = {'name': 'RecEVFlowNet', 'encoding': 'cnt', 'round_encoding': False, 'norm_input': False, 'num_bins': 2, 'base_num_channels': 32, 'kernel_size': 3, 'activations': ['relu', None], 'mask_output': True, 'spiking_neuron':None}
     estimator_model = RecEVFlowNet(model_config).to(0)
-    model_dir = './PAEv3D/event_flow/mlruns/mlruns/mds/EVFlowNet/artifacts/model/data/model.pth'
+    model_dir = './PAEv3d/event_flow/mlruns/mlruns/mds/EVFlowNet/artifacts/model/data/model.pth'
 
 
     if os.path.isfile(model_dir):
