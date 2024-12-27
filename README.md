@@ -38,7 +38,7 @@ conda activate paev3d
 ```
 
 # Download models
-Download the pretrained models from [here](https://hkustgz-my.sharepoint.com/:u:/g/personal/jhe382_connect_hkust-gz_edu_cn/EabRlkggOp1ArHX6SaB__cIBxv4PiEWGGWVE3xCZCZ9Wuw?e=YwxMV1) and be expected at ```event-flow/mlruns/```
+Download the pretrained models from [here](https://hkustgz-my.sharepoint.com/:u:/g/personal/jhe382_connect_hkust-gz_edu_cn/EabRlkggOp1ArHX6SaB__cIBxv4PiEWGGWVE3xCZCZ9Wuw?e=YwxMV1) and it is expected at ```event-flow/mlruns/```
 You should edit the corresponding model paths in the data loader eventh5_loader.py
 
 # Training and Testing
