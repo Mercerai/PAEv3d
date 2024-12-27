@@ -33,12 +33,13 @@ Please contact us if you need to adapt your own event datasets.
 
 # Create environment
 ```
-conda env create --file environment.yml
+conda env create --file paev3d.yaml
 conda activate paev3d
 ```
 
 # Download models
 Download the pretrained models and be expected at ```event-flow/mlruns/```
+You should edit the corresponding model paths in the data loader eventh5_loader.py
 
 # Training and Testing
 ```
